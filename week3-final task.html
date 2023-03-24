@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DomesticViolence</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #7d51e8;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #7d51e8;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #8b69e1;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .learn-more {
+        color: #7a4cf0;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Domestic Violence</h1>
+      <h2>Domestic abuse: how to get help</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/883/original/slide1p-1-e1587462938234-712x400.jpeg?1654009577"
+        alt="Domestic Violence"
+      />
+      <p>
+        Does your partner, ex-partner or someone you live with: cut you off from
+        family and friends and intentionally isolate you? bully, threaten, or
+        control you? take control of your finances? monitor or limit your use of
+        technology? physically and/or sexually abuse you? Domestic abuse is not
+        always physical violence. It can also include: coercive control and
+        ‘gaslighting’ economic abuse online abuse threats and intimidation
+        emotional abuse sexual abuse Anyone can be a victim of domestic abuse,
+        regardless of gender, age, ethnicity, religion, socio-economic status,
+        sexuality or background. If you believe that you are a victim of
+        domestic abuse, there are signs that you can look out for including:
+        being withdrawn, or being isolated from your family and friends having
+        bruises, burns or bite marks on you having your finances controlled, or
+        not being given enough to buy food, medication or pay bills not being
+        allowed to leave your house, or stopped from going to college or work
+        having your internet or social media use monitored, or someone else
+        reading your texts, emails or letters being repeatedly belittled, put
+        down or told you are worthless being pressured into sex or sexual
+        contact being told that abuse is your fault, or that you’re overreacting
+      </p>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/887/original/Screen_Shot_2022-05-31_at_4.20.15_PM.png?1654010430"
+        alt="domesticViolence"
+      />
+      <a
+        href="https://www.gov.uk/guidance/domestic-abuse-how-to-get-help"
+        target="_blank"
+        class="learn-more"
+      >
+        For help contact <Gov class="uk"> </Gov>
+      </a>
+      <button class="contact-button">Get Help</button>
+      <p class="footer">
+        This page was built by
+        <a
+          href="file:///Users/mac/Desktop/SHECODES/week%203/hanna%20odulaja.html"
+          target="_blank"
+        >
+          hanna odulaja</a
+        >
+      </p>
+    </div>
+    <script>
+      function contact() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let number = prompt("What is your phone no?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be call you shortly, please find a safe place till we contact you.BE SAFE! "
+        );
+      }
+
+      let contactButton = document.querySelector(".contact-button");
+      contactButton.addEventListener("click", contact);
+    </script>
+  </body>
+</html>
